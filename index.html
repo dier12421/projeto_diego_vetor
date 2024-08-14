@@ -1,79 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Formulário</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Formulário Vetores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>Trabalhando com Vetores</h1>
-	<form id="formulario">
-		<label for="primeiro_numero_inteiro">Digite um valor de cada vez:</label>
-		<input type="text" id="primeiro_numero_inteiro"><br>
-		<br>
-		<button type="submit" id="submit-btn">Enviar</button>
-		<!-- <button type="submit" onclick="executar()">Enviar</button> -->
-		<table id = "tabelaPares">
-    <thead>
-    <tr>
-    <th>Valores</th>
-	</tr>
-</head>
-<tbody>
-</tbody>
-	</table>
-	<button type="submit" id="submit-btn">Mostrar números pares</button>
-		<!-- <button type="submit" onclick="executar()">Enviar</button> -->
-		<table id = "tabelaPares">
-		<thead>
-		<tr>
-		<th>Números Pares</th>
-		</tr>
-		</head>
-		<tbody>
-			<!--Números pares aparecerão aqui-->
-		</tbody>
-		</table>
-	</form>
-	<button type="button" id="addbtn" onclick="adicionarValor"
-	AdicionarValor</button></button>
-
-
-	<table id="tabelaValores">
+  <h1>Trabalhando com vetores</h1>
+  <form id="formulario">
+    <label for="valor">Digite um valor:</label>
+    <input type="text" id="valor"><br>
+    <button type="button" id="add-btn" onclick="adicionarValor()">Adicionar Valor</button>
+    <table id="tabelaValores">
       <thead>
-         <tr>
-			<th>Valores</th>
-		</tr>
-
-
-
-
-
-	  </thead>
-	
-
-
-
-
-
-
-
-
-	</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<script src="js/script.js"></script>
+        <tr>
+          <th>Valores</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <button type="button" id="par-btn" onclick="mostrarPares()">Mostrar números pares</button>
+    <table id="TabelaPares">
+      <thead>
+        <tr>
+          <th>Números Pares</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </form>
+  <script src="js/script.js"></script>
 </body>
 </html>
